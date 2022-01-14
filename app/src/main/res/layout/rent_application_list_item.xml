@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_container_sm"
+    android:layout_margin="@dimen/padding_container_sm"
+    android:background="@drawable/bg_rent_application_item"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/application_tenant_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Tenant Name"
+        android:textSize="@dimen/text_lg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/application_tenant_address"
+        app:layout_constraintTop_toBottomOf="@id/application_tenant_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Address"
+        android:textSize="@dimen/text_md"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/application_date"
+        app:layout_constraintTop_toBottomOf="@id/application_tenant_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Application Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

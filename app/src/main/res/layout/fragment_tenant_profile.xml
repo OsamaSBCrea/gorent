@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_container_md"
+    tools:context=".ui.settings.TenantProfileFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/field_email"
+            android:textSize="@dimen/text_md"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tenant_profile_email"
+            android:textSize="@dimen/text_lg"
+            android:text="email@email.com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/field_first_name"
+            android:textSize="@dimen/text_md"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edit_tenant_profile_first"
+            android:inputType="text"
+            android:background="@drawable/edit_text_bg"
+            android:minWidth="@dimen/field_min_width"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tenant_profile_invalid_first"
+            android:text="@string/field_tenant_first_invalid"
+            android:textColor="@color/dark_danger"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/field_last_name"
+            android:textSize="@dimen/text_md"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edit_tenant_profile_last"
+            android:inputType="text"
+            android:background="@drawable/edit_text_bg"
+            android:minWidth="@dimen/field_min_width"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tenant_profile_invalid_last"
+            android:text="@string/field_tenant_last_invalid"
+            android:textColor="@color/dark_danger"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/field_gender"
+            android:textSize="@dimen/text_md"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/edit_tenant_profile_gender"
+            android:background="@drawable/edit_text_bg"
+            android:minWidth="@dimen/field_min_width"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/field_nationality"
+            android:textSize="@dimen/text_md"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/edit_tenant_profile_nationality"
+            android:background="@drawable/edit_text_bg"
+            android:minWidth="@dimen/field_min_width"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/field_gms"
+            android:textSize="@dimen/text_md"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edit_tenant_profile_gms"
+            android:inputType="number"
+            android:background="@drawable/edit_text_bg"
+            android:minWidth="@dimen/field_min_width"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tenant_profile_invalid_gms"
+            android:text="@string/field_tenant_gms_invalid"
+            android:textColor="@color/dark_danger"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/field_occupation"
+            android:textSize="@dimen/text_md"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edit_tenant_profile_occupation"
+            android:inputType="text"
+            android:background="@drawable/edit_text_bg"
+            android:minWidth="@dimen/field_min_width"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tenant_profile_invalid_occupation"
+            android:text="@string/field_tenant_occupation_invalid"
+            android:textColor="@color/dark_danger"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/field_family_size"
+            android:textSize="@dimen/text_md"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edit_tenant_profile_family"
+            android:inputType="number"
+            android:background="@drawable/edit_text_bg"
+            android:minWidth="@dimen/field_min_width"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tenant_profile_invalid_family"
+            android:text="@string/field_tenant_family_invalid"
+            android:textColor="@color/dark_danger"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/field_country"
+            android:textSize="@dimen/text_md"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tenant_profile_country"
+            android:textSize="@dimen/text_lg"
+            android:text="Palestine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/field_city"
+            android:textSize="@dimen/text_md"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tenant_profile_city"
+            android:textSize="@dimen/text_lg"
+            android:text="Hebron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/field_phone_number"
+            android:textSize="@dimen/text_md"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edit_tenant_profile_phone"
+            android:inputType="phone"
+            android:background="@drawable/edit_text_bg"
+            android:minWidth="@dimen/field_min_width"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tenant_profile_invalid_phone"
+            android:text="@string/field_phone_invalid"
+            android:textColor="@color/dark_danger"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_tenant_edit"
+            android:text="@string/action_submit"
+            android:backgroundTint="@color/main_dark"
+            android:textColor="@color/white"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

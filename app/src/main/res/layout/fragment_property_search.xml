@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_container_md"
+    tools:context=".ui.property.search.PropertySearchFragment">
+
+    <TextView
+        android:textSize="@dimen/text_lg"
+        android:id="@+id/text_new_property_title"
+        android:text="@string/title_search_property"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_search_property_city"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_city"/>
+
+            <Spinner
+                android:id="@+id/spinner_search_property_city"
+                app:layout_constraintTop_toBottomOf="@id/text_search_property_city"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_search_property_min_area"
+                app:layout_constraintStart_toStartOf="@id/search_property_min_area"
+                app:layout_constraintTop_toBottomOf="@id/spinner_search_property_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_property_min_area"/>
+
+            <EditText
+                app:layout_constraintTop_toBottomOf="@id/text_search_property_min_area"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/search_property_min_area"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width_sm"
+                android:maxWidth="@dimen/field_min_width_sm"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_search_property_max_area"
+                app:layout_constraintStart_toStartOf="@id/search_property_max_area"
+                app:layout_constraintTop_toBottomOf="@id/spinner_search_property_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_property_max_area"/>
+
+            <EditText
+                app:layout_constraintTop_toBottomOf="@id/text_search_property_max_area"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/search_property_max_area"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width_sm"
+                android:maxWidth="@dimen/field_min_width_sm"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/text_search_property_min_bedrooms"
+                app:layout_constraintStart_toStartOf="@id/search_property_min_bedrooms"
+                app:layout_constraintTop_toBottomOf="@id/search_property_min_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_property_min_bedrooms"/>
+
+            <EditText
+                app:layout_constraintTop_toBottomOf="@id/text_search_property_min_bedrooms"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/search_property_min_bedrooms"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width_sm"
+                android:maxWidth="@dimen/field_min_width_sm"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_search_property_max_bedrooms"
+                app:layout_constraintStart_toStartOf="@id/search_property_max_bedrooms"
+                app:layout_constraintTop_toBottomOf="@id/search_property_min_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_property_max_bedrooms"/>
+
+            <EditText
+                app:layout_constraintTop_toBottomOf="@id/text_search_property_max_bedrooms"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/search_property_max_bedrooms"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width_sm"
+                android:maxWidth="@dimen/field_min_width_sm"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_search_property_min_price"
+                app:layout_constraintStart_toStartOf="@id/search_property_min_price"
+                app:layout_constraintTop_toBottomOf="@id/search_property_min_bedrooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_property_min_price"/>
+
+            <EditText
+                app:layout_constraintTop_toBottomOf="@id/text_search_property_min_price"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/search_property_min_price"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width_sm"
+                android:maxWidth="@dimen/field_min_width_sm"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_search_property_status"
+                app:layout_constraintTop_toBottomOf="@id/search_property_min_price"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_property_status"/>
+
+            <Spinner
+                android:id="@+id/spinner_search_property_status"
+                app:layout_constraintTop_toBottomOf="@id/text_search_property_status"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_search_property_balcony"
+                app:layout_constraintStart_toEndOf="@id/switch_search_property_balcony"
+                app:layout_constraintTop_toBottomOf="@id/spinner_search_property_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_md"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_property_balcony"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_search_property_balcony"
+                app:layout_constraintStart_toEndOf="@id/chk_search_property_balcony"
+                app:layout_constraintTop_toBottomOf="@id/spinner_search_property_status"
+                android:enabled="false"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:id="@+id/chk_search_property_balcony"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner_search_property_status"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_search_property_garden"
+                app:layout_constraintStart_toEndOf="@id/switch_search_property_garden"
+                app:layout_constraintTop_toBottomOf="@id/chk_search_property_balcony"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:textSize="@dimen/text_md"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_property_garden"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_search_property_garden"
+                app:layout_constraintStart_toEndOf="@id/chk_search_property_garden"
+                app:layout_constraintTop_toBottomOf="@id/chk_search_property_balcony"
+                android:enabled="false"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:id="@+id/chk_search_property_garden"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/chk_search_property_balcony"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_search_property"
+        android:text="@string/action_search"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/main_dark"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ui.auth.TenantSignUpFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/edit_tenant_email"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_email"/>
+
+            <EditText
+                android:id="@+id/edit_tenant_email"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_tenant_email_invalid"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/dark_danger"
+                android:text="@string/field_email_invalid"
+                android:textSize="@dimen/text_sm"
+                android:layout_marginTop="@dimen/margin_xsmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/edit_tenant_first"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_first_name"/>
+
+            <EditText
+                android:id="@+id/edit_tenant_first"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_tenant_first_invalid"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/dark_danger"
+                android:text="@string/field_tenant_first_invalid"
+                android:textSize="@dimen/text_sm"
+                android:layout_marginTop="@dimen/margin_xsmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/edit_tenant_last"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_last_name"/>
+
+            <EditText
+                android:id="@+id/edit_tenant_last"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_tenant_last_invalid"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/dark_danger"
+                android:text="@string/field_tenant_last_invalid"
+                android:textSize="@dimen/text_sm"
+                android:layout_marginTop="@dimen/margin_xsmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/spinner_tenant_gender"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_gender"/>
+
+            <Spinner
+                android:id="@+id/spinner_tenant_gender"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/edit_tenant_password"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_password"/>
+
+            <EditText
+                android:id="@+id/edit_tenant_password"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_tenant_password_invalid"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/dark_danger"
+                android:text="@string/field_password_invalid"
+                android:textSize="@dimen/text_sm"
+                android:layout_marginTop="@dimen/margin_xsmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/edit_tenant_confirm_password"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_confirm_password"/>
+
+            <EditText
+                android:id="@+id/edit_tenant_confirm_password"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_tenant_confirm_pass_invalid"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/dark_danger"
+                android:text="@string/field_confirm_pass_invalid"
+                android:textSize="@dimen/text_sm"
+                android:layout_marginTop="@dimen/margin_xsmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/spinner_tenant_nationality"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_nationality"/>
+
+            <Spinner
+                android:id="@+id/spinner_tenant_nationality"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/edit_tenant_salary"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_gms"/>
+
+            <EditText
+                android:id="@+id/edit_tenant_salary"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_tenant_gms_invalid"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/dark_danger"
+                android:text="@string/field_tenant_gms_invalid"
+                android:textSize="@dimen/text_sm"
+                android:layout_marginTop="@dimen/margin_xsmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/edit_tenant_occupation"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_occupation"/>
+
+            <EditText
+                android:id="@+id/edit_tenant_occupation"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_tenant_occupation_invalid"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/dark_danger"
+                android:text="@string/field_tenant_occupation_invalid"
+                android:textSize="@dimen/text_sm"
+                android:layout_marginTop="@dimen/margin_xsmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/edit_tenant_family"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_family_size"/>
+
+            <EditText
+                android:id="@+id/edit_tenant_family"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_tenant_family_invalid"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/dark_danger"
+                android:text="@string/field_tenant_family_invalid"
+                android:textSize="@dimen/text_sm"
+                android:layout_marginTop="@dimen/margin_xsmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/spinner_tenant_country"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_current_residence_country"/>
+
+            <Spinner
+                android:id="@+id/spinner_tenant_country"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/spinner_tenant_city"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_city"/>
+
+            <Spinner
+                android:id="@+id/spinner_tenant_city"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/edit_tenant_phone"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_phone_number"/>
+
+            <EditText
+                android:id="@+id/edit_tenant_phone"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_tenant_phone_invalid"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/dark_danger"
+                android:text="@string/field_phone_invalid"
+                android:textSize="@dimen/text_sm"
+                android:layout_marginTop="@dimen/margin_xsmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_tenant_submit"
+        android:text="@string/action_submit"
+        android:backgroundTint="@color/main_dark"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:minWidth="@dimen/button_min_width_small"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

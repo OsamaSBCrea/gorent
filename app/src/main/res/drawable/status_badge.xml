@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <padding
+        android:left="@dimen/margin_medium"
+        android:right="@dimen/margin_medium"
+        android:top="@dimen/margin_xsmall"
+        android:bottom="@dimen/margin_xsmall"/>
+    <corners android:radius="@dimen/badge_border_radius"/>
+    <solid android:color="@color/secondary_dark"/>
+</shape>

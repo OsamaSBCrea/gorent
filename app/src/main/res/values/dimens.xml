@@ -1,0 +1,37 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="margin_logo">250dp</dimen>
+    <dimen name="margin_xsmall">5dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_medium">20dp</dimen>
+    <dimen name="margin_large">40dp</dimen>
+
+    <dimen name="padding_container_sm">10dp</dimen>
+    <dimen name="padding_container_md">20dp</dimen>
+
+    <dimen name="edit_text_border">2dp</dimen>
+    <dimen name="edit_text_radius">10dp</dimen>
+    <dimen name="edit_text_padding">8dp</dimen>
+
+    <dimen name="badge_border_radius">15dp</dimen>
+
+    <dimen name="field_min_width_sm">150dp</dimen>
+    <dimen name="field_min_width">200dp</dimen>
+    <dimen name="button_min_width">220dp</dimen>
+    <dimen name="button_min_width_small">150dp</dimen>
+
+    <dimen name="title_size">12sp</dimen>
+    <dimen name="subtitle_size">4sp</dimen>
+    <dimen name="text_xlg">30sp</dimen>
+    <dimen name="text_lg">24sp</dimen>
+    <dimen name="text_md">18sp</dimen>
+    <dimen name="text_sm">12sp</dimen>
+
+    <dimen name="rent_application_item_border">1dp</dimen>
+</resources>

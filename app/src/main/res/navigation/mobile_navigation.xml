@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.gorent.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_property_search"
+        android:name="com.example.gorent.ui.property.search.PropertySearchFragment"
+        android:label="@string/menu_property_search"
+        tools:layout="@layout/fragment_property_search" />
+
+    <fragment
+        android:id="@+id/nav_property_post"
+        android:name="com.example.gorent.ui.property.post.PropertyPostFragment"
+        android:label="@string/menu_property_post"
+        tools:layout="@layout/fragment_property_post" />
+
+    <fragment
+        android:id="@+id/nav_property_list"
+        android:name="com.example.gorent.ui.property.PropertyListFragment"
+        android:label="@string/menu_property_list"
+        tools:layout="@layout/fragment_property_list"/>
+
+    <fragment
+        android:id="@+id/nav_rent_applications"
+        android:name="com.example.gorent.ui.rent.RentApplicationsFragment"
+        android:label="@string/menu_rent_applications"
+        tools:layout="@layout/fragment_rent_applications"/>
+
+    <fragment
+        android:id="@+id/nav_rental_history"
+        android:name="com.example.gorent.ui.rent.RentalHistoryFragment"
+        android:label="@string/menu_rental_history"
+        tools:layout="@layout/fragment_rental_history"/>
+</navigation>

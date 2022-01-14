@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_rent_history_item"
+    android:padding="@dimen/padding_container_sm"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/padding_container_sm"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/rent_property_city"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/text_lg"
+        android:text="City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/rent_property_address"
+        app:layout_constraintTop_toBottomOf="@id/rent_property_city"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="@dimen/text_md"
+        android:text="Postal Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:id="@+id/rent_agency_tenant_name"
+        app:layout_constraintTop_toBottomOf="@id/rent_property_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/rent_agency_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/rent_tenant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/rent_start_date"
+        app:layout_constraintTop_toBottomOf="@id/rent_agency_tenant_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Start Date: dd/mm/yyyy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/rent_period"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Rent Period"
+        android:textSize="@dimen/text_md"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/rent_status"
+        app:layout_constraintTop_toBottomOf="@id/rent_period"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

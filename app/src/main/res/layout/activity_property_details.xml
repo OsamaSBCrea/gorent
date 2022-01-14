@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.property.PropertyDetailsActivity">
+
+    <ImageView
+        android:id="@+id/image_property_details_thumb"
+        android:scaleType="centerCrop"
+        android:src="@drawable/property_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+    <ScrollView
+        android:id="@+id/property_details_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:paddingVertical="@dimen/padding_container_sm"
+            android:layout_marginHorizontal="@dimen/padding_container_md"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/property_details_city"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:gravity="center"
+                android:text="@string/field_city"
+                android:textSize="@dimen/text_lg"
+                android:paddingBottom="@dimen/margin_xsmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/property_details_address"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/property_details_city"
+                android:gravity="center"
+                android:textSize="@dimen/text_md"
+                android:text="@string/field_postal_address"
+                android:paddingBottom="@dimen/margin_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/property_details_price"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center"
+                android:textSize="@dimen/text_lg"
+                android:paddingBottom="@dimen/margin_xsmall"
+                android:text="@string/field_rental_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/property_details_area"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/property_details_price"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_xsmall"
+                android:textSize="@dimen/text_md"
+                android:text="@string/field_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/property_details_year"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/property_details_address"
+                android:gravity="center"
+                android:text="@string/field_construction_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/property_details_bedrooms"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/property_details_area"
+                android:gravity="center"
+                android:textSize="@dimen/text_md"
+                android:paddingBottom="@dimen/margin_xsmall"
+                android:text="@string/field_bedrooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/property_details_status"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/property_details_year"
+                android:layout_marginVertical="@dimen/margin_medium"
+                android:textColor="@color/white"
+                android:background="@drawable/status_badge"
+                android:gravity="center"
+                android:textSize="@dimen/text_md"
+                android:paddingBottom="@dimen/margin_xsmall"
+                android:text="@string/field_property_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/property_details_agency"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/property_details_status"
+                android:layout_marginTop="@dimen/margin_small"
+                android:gravity="center"
+                android:textSize="@dimen/text_md"
+                android:paddingBottom="@dimen/margin_xsmall"
+                android:text="@string/field_agency_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/property_details_date"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/property_details_agency"
+                android:layout_marginTop="@dimen/margin_small"
+                android:gravity="center"
+                android:textSize="@dimen/text_md"
+                android:paddingBottom="@dimen/margin_xsmall"
+                android:text="@string/field_property_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                android:id="@+id/has_balcony_layout"
+                app:layout_constraintTop_toBottomOf="@id/property_details_date"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_has_balcony_yes"
+                    android:src="@drawable/ic_baseline_yes"
+                    app:tint="@color/main_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/img_has_balcony_no"
+                    android:src="@drawable/ic_baseline_no"
+                    app:tint="@color/main_danger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/property_details_balcony"
+                app:layout_constraintStart_toEndOf="@id/has_balcony_layout"
+                app:layout_constraintTop_toBottomOf="@id/property_details_date"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_small"
+                android:gravity="center"
+                android:textSize="@dimen/text_md"
+                android:paddingBottom="@dimen/margin_xsmall"
+                android:text="@string/field_property_balcony"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                android:id="@+id/has_garden_layout"
+                app:layout_constraintTop_toBottomOf="@id/property_details_balcony"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_has_garden_yes"
+                    android:src="@drawable/ic_baseline_yes"
+                    app:tint="@color/main_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/img_has_garden_no"
+                    android:src="@drawable/ic_baseline_no"
+                    app:tint="@color/main_danger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/property_details_garden"
+                app:layout_constraintStart_toEndOf="@id/has_balcony_layout"
+                app:layout_constraintTop_toBottomOf="@id/property_details_balcony"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_small"
+                android:gravity="center"
+                android:textSize="@dimen/text_md"
+                android:paddingBottom="@dimen/margin_xsmall"
+                android:text="@string/field_property_garden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/property_details_description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/property_details_garden"
+                android:layout_marginTop="@dimen/margin_small"
+                android:gravity="center"
+                android:textSize="@dimen/text_md"
+                android:paddingBottom="@dimen/margin_xsmall"
+                android:text="@string/field_property_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/btn_property_edit"
+                android:src="@drawable/ic_baseline_edit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/btn_property_delete"
+                android:src="@drawable/ic_baseline_delete"
+                app:tint="@color/dark_danger"
+                app:layout_constraintTop_toBottomOf="@id/property_details_description"
+                app:layout_constraintEnd_toStartOf="@id/btn_property_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_property_rent"
+                android:text="@string/action_rent"
+                app:layout_constraintTop_toBottomOf="@id/property_details_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:backgroundTint="@color/main_dark"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/edit_property_container"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

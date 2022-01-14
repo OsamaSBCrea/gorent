@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">GoRent</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="default_notification_channel_id">GORENT_NOTIFICATION_ID</string>
+    <string name="default_notification_channel_name">GORENT_NOTIFICATION</string>
+
+    <!--  Navigation Menu Items  -->
+    <string name="menu_home">Home</string>
+    <string name="menu_property_search">Search for Property</string>
+    <string name="menu_property_post">New Property</string>
+    <string name="menu_property_list">Property List</string>
+    <string name="menu_rental_history">Rental History</string>
+    <string name="menu_rent_applications">Rent Applications</string>
+
+    <string name="title_activity_intro">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!--  Titles  -->
+    <string name="title_sign_in">Sign In</string>
+    <string name="title_sign_up">Sign Up</string>
+    <string name="subtitle_sign_up">Please choose account type</string>
+    <string name="title_new_property">Post a New Property</string>
+    <string name="title_edit_property">Edit your Property</string>
+    <string name="title_search_property">Search for a Property</string>
+    <string name="title_rent_application">Rent Application</string>
+    <string name="title_rent_history">Rent History</string>
+
+    <!--  Connection Alerts  -->
+    <string name="connecting">Connecting...</string>
+    <string name="connection_failed">Connection Failed!</string>
+    <string name="connection_failed_toast">Please check your internet connection and try again</string>
+
+    <!--  APIs Alerts  -->
+    <string name="alrt_wrong_login">Incorrect email or password!</string>
+    <string name="alrt_get_cities_failed">Can\'t get Cities! Please try again later</string>
+    <string name="alrt_post_new_property">Can\'t post a new property! Please try again later</string>
+    <string name="alrt_get_properties_list">Can\'t get properties! Please try again later</string>
+    <string name="alrt_login_after_register">Can\'t login to your account! Please try to login manually</string>
+    <string name="alrt_search_properties">Can\'t search for properties! Please try again later</string>
+    <string name="alrt_delete_property">Can\'t delete property! Please try again later</string>
+    <string name="alrt_rent_property">Can\'t apply to rent this property! Please try again later</string>
+
+    <!--  Not found Alerts  -->
+    <string name="alrt_properties_not_found">No Properties Found!</string>
+    <string name="alrt_no_history">No Rent History Found!</string>
+
+    <!--  Confirmation Alerts  -->
+    <string name="confirm_delete_title">Confirm Delete</string>
+    <string name="confirm_delete_property">Are you sure you want to delete this property?</string>
+    <string name="confirm_rent_title">Confirm Rent</string>
+    <string name="confirm_rent_property">Are you sure you want to rent this property?</string>
+
+    <string name="confirm_approve_title">Confirm Approve</string>
+    <string name="confirm_approve_rent">Are you sure you want to approve this rent application?</string>
+    <string name="confirm_reject_title">Confirm Reject</string>
+    <string name="confirm_reject_rent">Are you sure you want to reject this rent application?</string>
+
+    <!--  Actions  -->
+    <string name="action_try_again">Try again</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="action_sign_up">Sign Up</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_remember_me">Remember Me</string>
+    <string name="action_forgot_password">Forgot Password?</string>
+    <string name="action_submit">Submit</string>
+    <string name="action_rent">Rent</string>
+    <string name="action_applied_disabled">Applied</string>
+    <string name="action_approved_disabled">Approved</string>
+    <string name="action_rented_disabled">Rented</string>
+    <string name="action_search">Search</string>
+    <string name="action_approve">Approve</string>
+    <string name="action_reject">Reject</string>
+    <string name="action_view_property">View Property</string>
+
+    <!--  Placeholders  -->
+    <string name="prompt_email">Email/Username</string>
+    <string name="prompt_password">Password</string>
+
+    <!--  Fields  -->
+    <string name="field_email">Email Address</string>
+    <string name="field_first_name">First Name</string>
+    <string name="field_last_name">Last Name</string>
+    <string name="field_gender">Gender</string>
+    <string name="field_password">Password</string>
+    <string name="field_confirm_password">Confirm Password</string>
+    <string name="field_nationality">Nationality</string>
+    <string name="field_gms">Gross Monthly Salary</string>
+    <string name="field_occupation">Occupation</string>
+    <string name="field_family_size">Family Size</string>
+    <string name="field_current_residence_country">Current Residence Country</string>
+    <string name="field_city">City</string>
+    <string name="field_phone_number">Phone Number</string>
+
+    <string name="field_agency_name">Agency Name</string>
+    <string name="field_country">Country</string>
+
+    <string name="field_postal_address">Postal Address</string>
+    <string name="field_area">Surface Area</string>
+    <string name="field_construction_year">Construction Year</string>
+    <string name="field_bedrooms">Number of Bedrooms</string>
+    <string name="field_rental_price">Rental Price</string>
+    <string name="field_property_status">Property Status</string>
+    <string name="field_property_date">Availability Date</string>
+    <string name="field_property_description">Description</string>
+    <string name="field_property_balcony">Has Balcony</string>
+    <string name="field_property_garden">Has Garden</string>
+
+    <string name="field_property_min_area">Minimum Surface Area</string>
+    <string name="field_property_max_area">Maximum Surface Area</string>
+    <string name="field_property_min_bedrooms">Minimum Bedrooms</string>
+    <string name="field_property_max_bedrooms">Maximum Bedrooms</string>
+    <string name="field_property_min_price">Minimum Rental Price</string>
+
+    <!--  Invalid Fields  -->
+    <string name="field_email_invalid">Please enter a valid email address</string>
+    <string name="field_password_invalid">Password must be 8-15 characters including at least one uppercase letter, one lowercase letter, one number and one special character of {$%#@!}</string>
+    <string name="field_confirm_pass_invalid">Confirm password doesn\'t match entered password</string>
+    <string name="field_phone_invalid">Phone number is required</string>
+
+    <string name="field_agency_name_invalid">Agency\'s name must be 5-20 characters</string>
+
+    <string name="field_tenant_first_invalid">Tenant\'s first name must be 3-20 characters</string>
+    <string name="field_tenant_last_invalid">Tenant\'s last name must be 3-20 characters</string>
+    <string name="field_tenant_occupation_invalid">Tenant\'s occupation must be at most 20 characters</string>
+    <string name="field_tenant_gms_invalid">Gross Monthly Salary is required</string>
+    <string name="field_tenant_family_invalid">Family Size is required</string>
+
+
+    <!--  Entities  -->
+    <string name="tenant">Tenant</string>
+    <string name="renting_agency">Renting Agency</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Your Profile</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_rent_application_details">RentApplicationDetailsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

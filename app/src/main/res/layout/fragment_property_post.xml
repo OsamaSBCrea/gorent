@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_container_md"
+    android:orientation="vertical"
+    tools:context=".ui.property.post.PropertyPostFragment">
+
+    <TextView
+        android:textSize="@dimen/text_lg"
+        android:id="@+id/text_new_property_title"
+        android:text="@string/title_new_property"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_new_property_city"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/spinner_property_city"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_city"/>
+
+            <Spinner
+                android:id="@+id/spinner_property_city"
+                app:layout_constraintTop_toBottomOf="@id/text_new_property_city"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_new_property_address"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner_property_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/new_property_address"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_postal_address"/>
+
+            <EditText
+                app:layout_constraintTop_toBottomOf="@id/text_new_property_address"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/new_property_address"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_new_property_area"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/new_property_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/new_property_area"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_area"/>
+
+            <EditText
+                app:layout_constraintTop_toBottomOf="@id/text_new_property_area"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/new_property_area"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_new_property_year"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/new_property_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/new_property_year"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_construction_year"/>
+
+            <EditText
+                app:layout_constraintTop_toBottomOf="@id/text_new_property_year"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/new_property_year"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_new_property_bedrooms"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/new_property_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/new_property_bedrooms"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_bedrooms"/>
+
+            <EditText
+                app:layout_constraintTop_toBottomOf="@id/text_new_property_bedrooms"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/new_property_bedrooms"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_new_property_price"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/new_property_bedrooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/new_property_price"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_rental_price"/>
+
+            <EditText
+                app:layout_constraintTop_toBottomOf="@id/text_new_property_price"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/new_property_price"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_new_property_status"
+                app:layout_constraintTop_toBottomOf="@id/new_property_price"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/spinner_property_status"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_property_status"/>
+
+            <Spinner
+                android:id="@+id/spinner_property_status"
+                app:layout_constraintTop_toBottomOf="@id/text_new_property_status"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_new_property_date"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner_property_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/new_property_date"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_property_date"/>
+
+            <CalendarView
+                app:layout_constraintTop_toBottomOf="@id/text_new_property_date"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/new_property_date"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:inputType="date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_new_property_description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/new_property_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/new_property_description"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_property_description"/>
+
+            <EditText
+                app:layout_constraintTop_toBottomOf="@id/text_new_property_description"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/new_property_description"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="@dimen/margin_small"
+                android:minWidth="@dimen/field_min_width"
+                android:inputType="textLongMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_new_property_balcony"
+                app:layout_constraintStart_toEndOf="@id/switch_property_balcony"
+                app:layout_constraintTop_toBottomOf="@id/new_property_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_md"
+                android:layout_marginStart="@dimen/margin_small"
+                android:labelFor="@id/switch_property_balcony"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_property_balcony"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_property_balcony"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/new_property_description"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_new_property_garden"
+                app:layout_constraintStart_toEndOf="@id/switch_property_garden"
+                app:layout_constraintTop_toBottomOf="@id/switch_property_balcony"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:textSize="@dimen/text_md"
+                android:labelFor="@id/switch_property_garden"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/field_property_garden"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_property_garden"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/switch_property_balcony"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_property_submit"
+        android:text="@string/action_submit"
+        android:backgroundTint="@color/main_dark"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
