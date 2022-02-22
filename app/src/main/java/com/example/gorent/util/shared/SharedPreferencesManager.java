@@ -75,7 +75,9 @@ public class SharedPreferencesManager {
                 sharedPreferences.getLong(SharedPreferencesKey.TENANT_ID.getLabel(), -1),
                 sharedPreferences.getLong(SharedPreferencesKey.USER_COUNTRY_ID.getLabel(), -1),
                 sharedPreferences.getLong(SharedPreferencesKey.CURRENT_RENTED_PROPERTY_ID.getLabel(), -1),
-                RentStatus.valueOf(sharedPreferences.getString(SharedPreferencesKey.CURRENT_RENTING_STATUS.getLabel(), ""))
+                StringUtils.isEmpty(sharedPreferences.getString(SharedPreferencesKey.CURRENT_RENTING_STATUS.getLabel(), "NONE"))
+                        ? RentStatus.NONE
+                        : RentStatus.valueOf(sharedPreferences.getString(SharedPreferencesKey.CURRENT_RENTING_STATUS.getLabel(), "NONE"))
         );
 
         return userModel;
