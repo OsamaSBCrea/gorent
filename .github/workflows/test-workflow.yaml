@@ -1,0 +1,22 @@
+name: Checkout
+
+on:
+  push:
+    paths:
+      - "build.gradle"
+      - "settings.gradle"
+      - "gradle.properties"
+      - "gradlew"
+      - "gradlew.bat"
+      - "app/**"
+      - "gradle/**"
+      - "packages/**"
+      - ".github/workflows/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
