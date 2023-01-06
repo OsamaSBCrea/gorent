@@ -1,4 +1,4 @@
-name: Test npm CI
+name: Checkout
 
 on:
   push:
