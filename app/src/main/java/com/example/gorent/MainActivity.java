@@ -51,7 +51,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
-// A commit test
+// A commit test 2
 public class MainActivity extends AppCompatActivity implements PropertyDetailsListener, RentApplicationDetailsListener {
 
     private AppBarConfiguration mAppBarConfiguration;
