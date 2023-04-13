@@ -34,6 +34,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
+// A new commit 2
 public class IntroActivity extends AppCompatActivity implements AsyncTaskCommunicator {
 
     private static final String INIT_CONNECTION_URL =
