@@ -90,6 +90,9 @@ public class MainActivity extends AppCompatActivity implements PropertyDetailsLi
                 R.id.nav_property_post, R.id.nav_rent_applications, R.id.nav_rental_history)
                 .setDrawerLayout(drawer)
                 .build();
+        
+        int testNum = 0;
+        System.out.println("Test Number: " + testNum); // Added for testing purposes
 
         sharedPreferencesManager = SharedPreferencesManager.getInstance(getApplicationContext());
         authenticationRepository = RepositoryManager.getInstance(getApplicationContext()).getAuthenticationRepository();
